@@ -1,0 +1,160 @@
+.home__wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 900px;
+    background-image: url(../../public/images/Banner.jpeg);
+    background-size: cover;
+    top: 0;
+    opacity: black 0.2;
+}
+
+.start__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 350px;
+    height: 380px;
+    margin: 0 auto;
+    align-self: center;
+    border-radius: 2%;
+    background-color: rgba(243, 238, 238, 0.8);
+}
+
+.start__title {
+    margin: 0 auto;
+    padding-top: 10px;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.start__QuotesBackground {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    align-self: center;
+    width: 85%;
+    height: 25vh;
+    font-weight: bolder;
+    font-size: 1rem;
+    background-image: url(../../public/images/Quote.jpeg);
+    background-size: cover;
+    background-color: (0, 0, 0, 0.8);
+    border-radius: 2%;
+
+}
+
+.start__QuotesBackground::before {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    align-self: center;
+    width: 85%;
+    height: 25vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* 어두운 레이어 색상과 반투명도 설정 */
+    border-radius: 2%;
+}
+
+.start__planQuotes {
+    position: absolute;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    align-self: center;
+    width: 85%;
+    margin-top: 40%;
+    text-align: center;
+    border-radius: 2%;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: under;
+    z-index: 999;
+
+}
+
+.start__button:hover {
+
+    background-color: rgb(157, 157, 157);
+    color: #4caf50;
+}
+
+.start__button {
+    background-color: rgb(182, 159, 130);
+    color: white;
+    border: none;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.start__button:hover {
+
+    background-color: white;
+    color: rgb(182, 159, 130);
+}
+/* Todo 시작 */
+
+.todo__wrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    margin-left: ;
+    align-self: center;
+    border-radius: 2%;
+    background-color: rgba(243, 238, 238, 0.8);
+}
+.end__button{
+    background-color: rgb(180, 31, 2);
+    color: white;
+    border: none;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.end__button:hover {
+
+    background-color: white;
+    color:rgb(180, 31, 2);
+}
+.todo__title{
+    font-size: 40px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: under;
+    color: rgba(243, 238, 238, 0.8);
+    margin-bottom: 20px;
+}
+.todo__planQuotes{
+    position: absolute;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    align-self: center;
+    width: 40%;
+    text-align: center;
+    border-radius: 2%;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+   
+    z-index: 999;
+}
