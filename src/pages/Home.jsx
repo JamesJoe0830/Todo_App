@@ -9,21 +9,6 @@ export default function Home() {
   const [start, setStart] = useState(false);
   const [randomQuote, setRandomQuote] = useState("");
   const [todoList, setTodoList] = useState([
-    {
-      id: 1,
-      text: "리액트 기초 알아보기",
-      checked: false,
-    },
-    {
-      id: 2,
-      text: "컴포넌트 스타일링 하기",
-      checked: false,
-    },
-    {
-      id: 3,
-      text: "투두리스트 만들기",
-      checked: false,
-    },
   ]);
   let today = new Date();
   let year = String(today.getFullYear()).slice(-2);

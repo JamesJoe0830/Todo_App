@@ -19,8 +19,7 @@
 .home__wrapper {
     display: flex;
     width: 100%;
-    height:100vh;
-    /* min-height: 940px; */
+    min-height:100vh;
     background-image: url(../../public/images/Banner.jpeg);
     background-size: cover;
     top: 0;
