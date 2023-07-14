@@ -7,10 +7,10 @@ export default function TodoInsert({ todoList,setTodoList,total,setTotal}) {
         setValue(e.target.value);
     };
     const handleSubmit = (e)=>{
-        console.log("제출");
         e.preventDefault(); // submit 누를때 새로고침 방지
+        // let newTodo
         if (value !== "") {
-            let newTodo ={
+            let newTodo = {
                 id : Date.now(),
                 text : value,
                 checked: false,
@@ -26,7 +26,7 @@ export default function TodoInsert({ todoList,setTodoList,total,setTotal}) {
     return (
         <div className='TodoInsert__wrapper'>
             <form className='TodoInsert' onSubmit={handleSubmit}>
-                <input className='TodoInput' value ={value} placeholder="새로운 할 일을 입력하세요" onChange={handleChange}/>
+                <input className='TodoInput' value ={value} placeholder="새로운 할 일을 입력하세요" onChange={handleChange} autoFocus/>
             <button className='submitButton' type ="submit" onClick={handleSubmit}>
                 입력
             </button>
