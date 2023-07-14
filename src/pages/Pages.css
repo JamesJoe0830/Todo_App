@@ -1,3 +1,21 @@
+@keyframes flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(241, 233, 221),
+      0 0 80px rgb(241, 233, 221),
+      0 0 90px rgb(131, 119, 101),
+      0 0 100px rgb(241, 233, 221),
+      0 0 150px rgb(255, 162, 0);
+      }
+ 20%, 24%, 55% {        
+      text-shadow: none;
+  } 
+}
+
 .home__wrapper {
     display: flex;
     width: 100%;
@@ -7,7 +25,29 @@
     top: 0;
     opacity: black 0.2;
 }
+.todo__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    align-self: center;
 
+}
+.date__Information {
+  display: flex;
+  color: rgb(237, 237, 237);
+  text-shadow: 0 0 4px rgb(138, 126, 126), 0 0 11px rgb(120, 106, 106), 0 0 19px #fff, 0 0 40px rgb(241, 233, 221), 0 0 80px rgb(241, 233, 221), 0 0 90px rgb(241, 233, 221), 0 0 100px rgb(127, 120, 110), 0 0 150px rgb(255, 162, 0);
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  height: fit-content;
+  text-align: center;
+  justify-content: center;
+  animation: flicker 1.5s ease-in-out alternate;
+}
 .start__wrapper {
     display: flex;
     flex-direction: column;
@@ -108,7 +148,7 @@
 }
 /* Todo 시작 */
 
-.todo__wrapper{
+.todoList__wrapper{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -143,6 +183,7 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
 
+
 }
 .todoItem__checkbox{
 
@@ -152,7 +193,18 @@
     color:black;
     opacity: 1;
     align-self: center;
+    max-width: 300px;
+
 }
+
+.todoItem__detailText{
+
+    color:black;
+    opacity: 1;
+    align-self: center;
+    overflow: hidden;
+}
+
 .todoItem__completeText{
     margin-left: 10px;
     color:black;
@@ -160,6 +212,7 @@
     text-decoration: line-through;
     align-self: center;
 }
+
 
 .todoItem__delete{
     background-color: transparent;
