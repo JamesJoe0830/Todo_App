@@ -19,7 +19,8 @@
 .home__wrapper {
     display: flex;
     width: 100%;
-    min-height: 860px;
+    height:100vh;
+    /* min-height: 940px; */
     background-image: url(../../public/images/Banner.jpeg);
     background-size: cover;
     top: 0;
@@ -213,10 +214,43 @@
     align-self: center;
 }
 
-
-.todoItem__delete{
+.todoItem__confirm{
     background-color: transparent;
     margin-left: auto;
+    float: right;
+    /* margin-right:10px; */
+    border:none;
+    font-size: 1.2rem;
+    color:black;
+    border-radius: 10%;
+    cursor: pointer;
+
+}
+.todoItem__confirm:hover{
+    color:rgb(14, 172, 167);
+
+
+}
+.todoItem__editing{
+    background-color: transparent;
+    margin-left: auto;
+    float: right;
+    /* margin-right:10px; */
+    border:none;
+    font-size: 1.2rem;
+    color:black;
+    border-radius: 10%;
+    cursor: pointer;
+
+}
+.todoItem__editing:hover{
+    color:rgb(14, 172, 35);
+
+
+}
+.todoItem__delete{
+    background-color: transparent;
+    /* margin-left: auto; */
     float: right;
     margin-right:10px;
     border:none;
